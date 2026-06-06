@@ -39,12 +39,9 @@ const registrations = [
         image: '/new-section/Sri Lanka gvernment.png',
         description: 'Confirmation Certificate of the Registration of Bookmaker through an agent or via internet with or without the use of live telecast facilities.',
         details: [
-            { label: 'Reference No.', value: 'TPR / BLT / 2026 / 1047' },
             { label: 'Taxpayer Identification No. (TIN)', value: '242557670' },
-            { label: 'Betting & Gaming File No.', value: 'BLT - 1047' },
-            { label: 'Type of Business', value: 'Through Via Internet (Online)' },
         ],
-        legislation: 'Registered under the Betting and Gaming Levy Act, No. 40 of 1988 and the Betting and Gaming Levy (Amendment) Act, No. 11 of 2023.',
+        legislation: 'This Taxpayer Identification Number is issued as per section 102 (4) of the Inland Revenue Act, No. 24 of 2017.',
     },
 ];
 
