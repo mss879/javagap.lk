@@ -35,9 +35,8 @@ const registrations = [
     },
     {
         jurisdiction: 'Sri Lanka',
-        subtitle: 'Inland Revenue Department — Source Tax Compliance Unit',
+        subtitle: 'Inland Revenue Department',
         image: '/new-section/Sri Lanka gvernment.png',
-        description: 'Confirmation Certificate of the Registration of Bookmaker through an agent or via internet with or without the use of live telecast facilities.',
         details: [
             { label: 'Taxpayer Identification No. (TIN)', value: '242557670' },
         ],
@@ -141,11 +140,6 @@ export default function CorporateRegistration() {
                                     <p className="text-sm sm:text-base text-zinc-500 font-medium mt-1">
                                         {reg.subtitle}
                                     </p>
-                                    {'description' in reg && reg.description && (
-                                        <p className="text-xs sm:text-sm text-zinc-400 italic mt-2 leading-relaxed max-w-2xl">
-                                            {reg.description}
-                                        </p>
-                                    )}
                                 </div>
 
                                 {/* Registration Numbers Grid */}
