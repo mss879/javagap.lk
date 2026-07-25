@@ -52,7 +52,7 @@ export default function ServicesHero() {
                     <Link href="/" className="relative h-10 lg:h-16 w-auto block">
                         <Image
                             src="/java-global-access-logo.png"
-                            alt="Java Gap Logo"
+                            alt="Java GAP™ Logo"
                             className="object-contain"
                             width={0}
                             height={0}
@@ -60,6 +60,7 @@ export default function ServicesHero() {
                             style={{ width: 'auto', height: '100%' }}
                             priority
                         />
+                        <span className="absolute -top-1 right-0 sm:right-1 lg:right-1.5 font-black text-sm sm:text-base lg:text-lg text-[#005495] leading-none select-none pointer-events-none">™</span>
                     </Link>
                 </div>
 

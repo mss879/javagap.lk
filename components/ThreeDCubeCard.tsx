@@ -77,7 +77,7 @@ const ThreeDCubeCard = () => {
                     <div className="relative h-12 w-auto">
                         <Image
                             src="/java-global-access-logo.png"
-                            alt="Java Global Access Logo"
+                            alt="Java Global Access™ Logo"
                             className="object-contain rounded-lg"
                             height={48}
                             width={100}

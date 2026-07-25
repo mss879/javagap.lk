@@ -30,7 +30,7 @@ export default function AdminSidebar() {
                 <div className="relative w-48 h-48">
                     <Image
                         src="/java-global-access-logo.png"
-                        alt="Logo"
+                        alt="Java Global Access™ Logo"
                         fill
                         className="object-contain"
                     />

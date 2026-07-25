@@ -442,15 +442,16 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
                         className={`flex items-center pointer-events-auto transition-all duration-500 overflow-hidden flex-shrink-0 ${scrolled ? 'opacity-100 max-w-[120px] pl-2 lg:max-w-[120px] lg:opacity-0 lg:p-0' : 'opacity-100 max-w-[120px] pl-2 lg:opacity-0 lg:max-w-0 lg:p-0'
                             }`}
                     >
-                        <Link href="/" className="block flex-shrink-0">
+                        <Link href="/" className="block flex-shrink-0 relative">
                             <Image
                                 src="/java-global-access-logo.png"
-                                alt="Java Global Access"
+                                alt="Java Global Access™"
                                 className="block h-10 w-auto object-contain"
                                 width={110}
                                 height={24}
                                 draggable={false}
                             />
+                            <span className="absolute -top-1 -right-2 font-black text-[10px] sm:text-xs text-[#005495] leading-none select-none pointer-events-none">™</span>
                         </Link>
                     </div>
 
@@ -464,12 +465,13 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
                             <Link href="/" className="relative z-[200] pointer-events-auto block">
                                 <Image
                                     src={logoUrl || '/src/assets/logos/reactbits-gh-white.svg'}
-                                    alt="Java Global Access"
+                                    alt="Java Global Access™"
                                     className="sm-logo-img block h-8 w-auto object-contain cursor-pointer"
                                     draggable={false}
                                     width={110}
                                     height={24}
                                 />
+                                <span className="absolute -top-1 -right-2 font-black text-[10px] sm:text-xs text-[#005495] leading-none select-none pointer-events-none">™</span>
                             </Link>
                         )}
                     </div>
