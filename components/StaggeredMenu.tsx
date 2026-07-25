@@ -441,7 +441,7 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
                     <div
                         className={`sm-logo flex items-center select-none pointer-events-auto transition-all duration-500 flex-shrink-0 ${scrolled
                             ? 'opacity-100 max-w-[140px] lg:max-w-[200px] lg:opacity-0'
-                            : 'opacity-100 max-w-[200px]'
+                            : 'opacity-100 max-w-[200px] lg:opacity-0 lg:max-w-0 lg:pointer-events-none'
                             }`}
                         aria-label="Logo"
                     >
