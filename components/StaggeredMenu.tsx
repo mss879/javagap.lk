@@ -437,43 +437,25 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
                         }`}
                     aria-label="Main navigation header"
                 >
-                    {/* Floating navbar logo - visible only when scrolled */}
+                    {/* Logo Slot - always on far left */}
                     <div
-                        className={`flex items-center pointer-events-auto transition-all duration-500 overflow-hidden flex-shrink-0 ${scrolled ? 'opacity-100 max-w-[120px] pl-2 lg:max-w-[120px] lg:opacity-0 lg:p-0' : 'opacity-100 max-w-[120px] pl-2 lg:opacity-0 lg:max-w-0 lg:p-0'
-                            }`}
-                    >
-                        <Link href="/" className="block flex-shrink-0 relative">
-                            <Image
-                                src="/java-global-access-logo.png"
-                                alt="Java Global Access™"
-                                className="block h-10 w-auto object-contain"
-                                width={110}
-                                height={24}
-                                draggable={false}
-                            />
-                            <span className="absolute -top-1 -right-2 font-black text-[10px] sm:text-xs text-[#005495] leading-none select-none pointer-events-none">™</span>
-                        </Link>
-                    </div>
-
-                    {/* Original logo slot - only when not scrolled */}
-                    <div
-                        className={`sm-logo flex items-center select-none pointer-events-auto transition-all duration-500 overflow-hidden ${scrolled ? 'opacity-0 max-w-0' : 'opacity-100 max-w-[200px]'
+                        className={`sm-logo flex items-center select-none pointer-events-auto transition-all duration-500 flex-shrink-0 ${scrolled
+                            ? 'opacity-100 max-w-[140px] lg:max-w-[200px] lg:opacity-0'
+                            : 'opacity-100 max-w-[200px]'
                             }`}
                         aria-label="Logo"
                     >
-                        {displayLogo && (
-                            <Link href="/" className="relative z-[200] pointer-events-auto block">
-                                <Image
-                                    src={logoUrl || '/src/assets/logos/reactbits-gh-white.svg'}
-                                    alt="Java Global Access™"
-                                    className="sm-logo-img block h-8 w-auto object-contain cursor-pointer"
-                                    draggable={false}
-                                    width={110}
-                                    height={24}
-                                />
-                                <span className="absolute -top-1 -right-2 font-black text-[10px] sm:text-xs text-[#005495] leading-none select-none pointer-events-none">™</span>
-                            </Link>
-                        )}
+                        <Link href="/" className="relative z-[200] pointer-events-auto inline-flex items-start">
+                            <Image
+                                src={logoUrl || '/java-global-access-logo.png'}
+                                alt="Java Global Access™"
+                                className="sm-logo-img block h-8 w-auto object-contain cursor-pointer"
+                                draggable={false}
+                                width={110}
+                                height={24}
+                            />
+                            <span className="text-[11px] font-black text-[#005495] leading-none select-none pointer-events-none -ml-0.5 -mt-0.5">™</span>
+                        </Link>
                     </div>
 
                     <div className={`flex items-center pointer-events-auto relative transition-all duration-500 ${scrolled ? 'gap-2 pl-2 pr-1 h-14 lg:gap-6 lg:pl-10 lg:pr-6 lg:h-20' : 'gap-1 px-1 h-14 lg:gap-6 lg:pl-10 lg:pr-6 lg:h-20'

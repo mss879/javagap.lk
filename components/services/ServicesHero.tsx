@@ -41,15 +41,15 @@ export default function ServicesHero() {
                         isFixed
                         onMenuOpen={() => console.log('Menu opened')}
                         onMenuClose={() => console.log('Menu closed')}
-                        displayLogo={false}
+                        displayLogo={true}
                     />
                 </div>
             </div>
 
             <div className="h-full w-full rounded-[2rem] bg-black overflow-hidden relative">
                 {/* Logo Container */}
-                <div className="absolute left-8 sm:left-12 top-[38px] lg:top-8 bg-white rounded-xl lg:rounded-2xl p-2 z-[60] hidden lg:block">
-                    <Link href="/" className="relative h-10 lg:h-16 w-auto block">
+                <div className="absolute left-4 sm:left-12 top-4 sm:top-[38px] lg:top-8 bg-white rounded-xl lg:rounded-2xl p-1.5 sm:p-2 z-[60] block">
+                    <Link href="/" className="relative h-8 sm:h-10 lg:h-16 w-auto block">
                         <Image
                             src="/java-global-access-logo.png"
                             alt="Java GAP™ Logo"
@@ -60,7 +60,6 @@ export default function ServicesHero() {
                             style={{ width: 'auto', height: '100%' }}
                             priority
                         />
-                        <span className="absolute -top-1 right-0 sm:right-1 lg:right-1.5 font-black text-sm sm:text-base lg:text-lg text-[#005495] leading-none select-none pointer-events-none">™</span>
                     </Link>
                 </div>
 

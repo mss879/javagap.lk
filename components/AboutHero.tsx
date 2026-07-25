@@ -41,7 +41,7 @@ export default function AboutHero() {
                         isFixed
                         onMenuOpen={() => console.log('Menu opened')}
                         onMenuClose={() => console.log('Menu closed')}
-                        displayLogo={false}
+                        displayLogo={true}
                     />
                 </div>
             </div>
@@ -60,7 +60,6 @@ export default function AboutHero() {
                             style={{ width: 'auto', height: '100%' }}
                             priority
                         />
-                        <span className="absolute -top-1 right-0 sm:right-1 lg:right-1.5 font-black text-sm sm:text-base lg:text-lg text-[#005495] leading-none select-none pointer-events-none">™</span>
                     </Link>
                 </div>
 
