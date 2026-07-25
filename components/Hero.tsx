@@ -66,7 +66,7 @@ export default function Hero() {
                         openMenuButtonColor="#000"
                         changeMenuColorOnOpen={true}
                         colors={['#005495', '#00AEEF']}
-                        logoUrl="/java-global-access-logo.png"
+                        logoUrl="/new-logo.png"
                         accentColor="#00AEEF"
                         onMenuOpen={() => console.log('Menu opened')}
                         onMenuClose={() => console.log('Menu closed')}
@@ -96,7 +96,7 @@ export default function Hero() {
                 <div className="absolute left-8 sm:left-12 top-8 lg:top-8 h-14 lg:h-auto bg-white rounded-xl lg:rounded-2xl p-2 z-[60] hidden lg:flex items-center">
                     <Link href="/" className="relative h-10 lg:h-16 w-auto block">
                         <Image
-                            src="/java-global-access-logo.png"
+                            src="/new-logo.png"
                             alt="Java GAP™ Logo"
                             className="object-contain"
                             width={0}

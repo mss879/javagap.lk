@@ -36,17 +36,14 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 pt-8">
                     {/* 1. Logo & Description */}
                     <div className="space-y-6 lg:col-span-1">
-                        <Link href="/" className="bg-white p-2 pr-4 rounded-xl w-fit block hover:opacity-90 transition-opacity relative z-[20]">
-                            <div className="relative inline-block">
-                                <Image
-                                    src="/java-global-access-logo.png"
-                                    alt="Java GAP™"
-                                    width={120}
-                                    height={40}
-                                    className="h-10 w-auto object-contain cursor-pointer"
-                                />
-                                <span className="absolute -top-0.5 right-0 font-black text-xs text-[#005495] leading-none select-none pointer-events-none">™</span>
-                            </div>
+                        <Link href="/" className="bg-white p-2 rounded-xl w-fit block hover:opacity-90 transition-opacity relative z-[20]">
+                            <Image
+                                src="/new-logo.png"
+                                alt="Java GAP™"
+                                width={120}
+                                height={40}
+                                className="h-10 w-auto object-contain cursor-pointer"
+                            />
                         </Link>
                         <p className="text-white text-base sm:text-lg leading-relaxed text-justify sm:text-left tracking-tighter sm:tracking-normal">
                             Global Delivery for Tech & Professional Services. Structured professional services and managed operational support for overseas clients.

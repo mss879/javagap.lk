@@ -37,7 +37,7 @@ export default function HowItWorksHero() {
                         openMenuButtonColor="#000"
                         changeMenuColorOnOpen={true}
                         colors={['#005495', '#00AEEF']}
-                        logoUrl="/java-global-access-logo.png"
+                        logoUrl="/new-logo.png"
                         accentColor="#00AEEF"
                         onMenuOpen={() => console.log('Menu opened')}
                         onMenuClose={() => console.log('Menu closed')}
@@ -52,7 +52,7 @@ export default function HowItWorksHero() {
                 <div className="absolute left-8 sm:left-12 top-[38px] lg:top-8 bg-white rounded-xl lg:rounded-2xl p-2 z-[60] hidden lg:block">
                     <Link href="/" className="relative h-10 lg:h-16 w-auto block">
                         <Image
-                            src="/java-global-access-logo.png"
+                            src="/new-logo.png"
                             alt="Java GAP™ Logo"
                             className="object-contain"
                             width={0}

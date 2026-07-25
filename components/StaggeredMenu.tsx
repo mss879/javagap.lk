@@ -43,7 +43,7 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
     displaySocials = true,
     displayItemNumbering = true,
     className,
-    logoUrl = '/java-global-access-logo.png',
+    logoUrl = '/new-logo.png',
     menuButtonColor = '#fff',
     openMenuButtonColor = '#fff',
     changeMenuColorOnOpen = true,
@@ -432,8 +432,8 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
 
                 <header
                     className={`staggered-menu-header flex items-center pointer-events-none transition-all duration-500 ease-in-out ${scrolled
-                        ? 'fixed top-4 left-0 right-0 w-[92%] max-w-full mx-auto bg-white/95 backdrop-blur-md rounded-2xl shadow-[0_8px_32px_rgba(0,0,0,0.08)] px-4 py-2 lg:px-8 lg:py-3 justify-between z-[9999] lg:top-0 lg:w-full lg:mx-0 lg:bg-transparent lg:shadow-none lg:backdrop-blur-none lg:rounded-none lg:p-[2em]'
-                        : 'absolute top-6 left-0 right-0 mx-auto w-[92%] bg-white/95 backdrop-blur-md rounded-2xl px-4 py-2 lg:top-0 lg:w-full lg:mx-0 lg:bg-transparent lg:backdrop-blur-none lg:rounded-none lg:p-[2em] justify-between z-[102]'
+                        ? 'fixed top-4 left-0 right-0 w-[92%] max-w-full mx-auto bg-white rounded-2xl shadow-[0_8px_32px_rgba(0,0,0,0.12)] px-4 py-2 lg:px-8 lg:py-3 justify-between z-[9999] lg:top-0 lg:w-full lg:mx-0 lg:bg-transparent lg:shadow-none lg:backdrop-blur-none lg:rounded-none lg:p-[2em]'
+                        : 'absolute top-6 left-0 right-0 mx-auto w-[92%] bg-white rounded-2xl shadow-sm px-4 py-2 lg:top-0 lg:w-full lg:mx-0 lg:bg-transparent lg:backdrop-blur-none lg:rounded-none lg:p-[2em] justify-between z-[102]'
                         }`}
                     aria-label="Main navigation header"
                 >
@@ -445,16 +445,15 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
                             }`}
                         aria-label="Logo"
                     >
-                        <Link href="/" className="relative z-[200] pointer-events-auto inline-flex items-start">
+                        <Link href="/" className="relative z-[200] pointer-events-auto inline-block">
                             <Image
-                                src={logoUrl || '/java-global-access-logo.png'}
+                                src={logoUrl || '/new-logo.png'}
                                 alt="Java Global Access™"
                                 className="sm-logo-img block h-8 w-auto object-contain cursor-pointer"
                                 draggable={false}
                                 width={110}
                                 height={24}
                             />
-                            <span className="text-[11px] font-black text-[#005495] leading-none select-none pointer-events-none -ml-0.5 -mt-0.5">™</span>
                         </Link>
                     </div>
 

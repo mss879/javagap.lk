@@ -29,7 +29,7 @@ export default function AdminSidebar() {
             <div className="p-8 pb-4 flex flex-col items-center gap-4">
                 <div className="relative w-48 h-48">
                     <Image
-                        src="/java-global-access-logo.png"
+                        src="/new-logo.png"
                         alt="Java Global Access™ Logo"
                         fill
                         className="object-contain"
